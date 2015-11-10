@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ((DaggerTestApplication) getApplication()).getGraphComponent().inject(this);
+        loaderThing = new LoaderThing();
 
         setContentView(R.layout.activity_main);
         Log.d(TAG, "Index: " + loaderThing.getIndex());
